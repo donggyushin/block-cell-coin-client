@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  background-color: #0d1136;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding-top: 70px;
+  padding-bottom: 180px;
+  .box {
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+      font-size: 28px;
+    }
+
+    .underline {
+      width: 120px;
+      border: 1px solid white;
+      margin-top: 20px;
+      margin-bottom: 90px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

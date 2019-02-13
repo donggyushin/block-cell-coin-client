@@ -1,0 +1,55 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .navvar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+
+  .capital-photo-container {
+    width: 100%;
+  }
+
+  .about-us-container {
+    width: 100%;
+  }
+
+  .business-model-container {
+    width: 100%;
+  }
+
+  .platform-container {
+    width: 100%;
+  }
+
+  .platform-image-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .allocation-container {
+    width: 100%;
+  }
+
+  .use-of-fund-container {
+    width: 100%;
+  }
+
+  .mobile-app-down-container {
+    width: 100%;
+  }
+
+  .futured-container {
+    width: 100%;
+  }
+}

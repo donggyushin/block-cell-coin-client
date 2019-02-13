@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 180px;
+  padding-bottom: 180px;
+
+  .box {
+    display: flex;
+    width: 1000px;
+    .image {
+      width: 440px;
+      margin-right: 150px;
+      img {
+        width: 100%;
+      }
+    }
+
+    .text-container {
+      .title {
+        margin-bottom: 40px;
+        border-bottom: 3px solid black;
+        padding-bottom: 10px;
+        width: 130px;
+        span {
+          font-size: 26px;
+        }
+      }
+      .contents {
+        p {
+          color: rgba($color: #000000, $alpha: 0.4);
+          letter-spacing: 1px;
+          font-weight: 100;
+          line-height: 2;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

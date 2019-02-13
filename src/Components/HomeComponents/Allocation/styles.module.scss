@@ -1,0 +1,35 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 90px;
+  img {
+    width: 100%;
+  }
+
+  .box {
+    width: 870px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    .title {
+      font-size: 25px;
+    }
+    .under-line {
+      width: 120px;
+      border: 1px solid black;
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+
+    .first-img {
+      width: 88%;
+      margin-bottom: 130px;
+    }
+    .second-img {
+      margin-bottom: 140px;
+    }
+  }
+}

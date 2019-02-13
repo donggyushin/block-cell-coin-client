@@ -1,0 +1,51 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0d1136;
+  color: white;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  .download-button {
+    width: 230px;
+    cursor: pointer;
+  }
+
+  .big-image {
+    width: 535px;
+    position: relative;
+    top: 30px;
+  }
+  .box {
+    width: 1050px;
+    display: flex;
+    .column {
+      &:first-child {
+        margin-right: 100px;
+      }
+      .title {
+        font-size: 24px;
+      }
+      .under-line {
+        width: 260px;
+        border: 1px solid white;
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+      .upper-contents {
+        font-size: 13px;
+        color: rgba($color: white, $alpha: 0.6);
+        line-height: 2;
+        margin-bottom: 80px;
+      }
+
+      .lower-contents {
+        font-size: 12px;
+        line-height: 2;
+        color: rgba($color: white, $alpha: 0.6);
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
