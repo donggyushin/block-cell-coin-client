@@ -1,0 +1,28 @@
+.container {
+  padding-top: 80px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block-end: 250px;
+
+  .title {
+    font-size: 25px;
+  }
+
+  .under-line {
+    width: 115px;
+    border: 1.5px solid black;
+    margin-top: 15px;
+    margin-bottom: 50px;
+  }
+
+  .contents {
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    line-height: 2.5;
+    font-weight: 100;
+    color: rgba($color: black, $alpha: 0.6);
+    margin-bottom: 100px;
+  }
+}

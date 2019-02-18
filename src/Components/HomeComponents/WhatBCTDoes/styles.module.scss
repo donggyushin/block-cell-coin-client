@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  background-color: #1f0239;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 140px;
+  padding-bottom: 100px;
+
+  .row {
+    width: 1250px;
+    display: flex;
+    justify-content: space-between;
+
+    .iten {
+      width: 400px;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      span {
+        margin-left: 15px;
+      }
+    }
+
+    .contents {
+      font-size: 12px;
+      padding-left: 55px;
+      margin-top: 35px;
+      margin-bottom: 60px;
+      color: rgba($color: white, $alpha: 0.7);
+      line-height: 2;
+      letter-spacing: 1px;
+    }
+  }
+}

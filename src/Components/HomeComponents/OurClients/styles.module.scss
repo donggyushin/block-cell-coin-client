@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 600px;
+  background-color: #1f0239;
+  color: white;
+
+  .title {
+    margin-top: 30px;
+    font-size: 25px;
+  }
+
+  .underline {
+    width: 100px;
+    height: 2.5px;
+    background-color: white;
+    margin-top: 10px;
+  }
+}

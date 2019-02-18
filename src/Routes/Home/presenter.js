@@ -11,6 +11,12 @@ import HomeAllocation from "../../Components/HomeComponents/Allocation";
 import HomeUseOfFund from "../../Components/HomeComponents/UseOfFund";
 import HomeDownloadMobileApp from "../../Components/HomeComponents/DownloadMobileApp";
 import HomeFutured from "../../Components/HomeComponents/Futured";
+import HomeWhatBctDoes from "../../Components/HomeComponents/WhatBCTDoes";
+import HomeBctMainNet from "../../Components/HomeComponents/BCTMainNet";
+import HomeProofOfHistory from "../../Components/HomeComponents/ProofOfHistory";
+import HomeRoadMap from "../../Components/HomeComponents/RoadMap";
+import HomeBusinessTeam from "../../Components/HomeComponents/BusinessTeam";
+import HomeOurClient from "../../Components/HomeComponents/OurClients";
 
 const cx = classNames.bind(styles);
 
@@ -46,6 +52,24 @@ const HomePage = () => {
       </div>
       <div className={cx("futured-container")}>
         <HomeFutured />
+      </div>
+      <div className={cx("what-bct-does-container")}>
+        <HomeWhatBctDoes />
+      </div>
+      <div className={cx("bct-main-net-container")}>
+        <HomeBctMainNet />
+      </div>
+      <div className={cx("proof-of-hybrid-container")}>
+        <HomeProofOfHistory />
+      </div>
+      <div className={cx("roadmap-container")}>
+        <HomeRoadMap />
+      </div>
+      <div className={cx("business-team-container")}>
+        <HomeBusinessTeam />
+      </div>
+      <div className={cx("our-client-container")}>
+        <HomeOurClient />
       </div>
     </div>
   );
