@@ -17,6 +17,7 @@ import HomeProofOfHistory from "../../Components/HomeComponents/ProofOfHistory";
 import HomeRoadMap from "../../Components/HomeComponents/RoadMap";
 import HomeBusinessTeam from "../../Components/HomeComponents/BusinessTeam";
 import HomeOurClient from "../../Components/HomeComponents/OurClients";
+import Fade from "react-reveal/Fade";
 
 const cx = classNames.bind(styles);
 
@@ -27,49 +28,77 @@ const HomePage = () => {
         <HomeNavVar />
       </div>
       <div className={cx("capital-photo-container")}>
-        <HomeCapitalPhoto />
+        <Fade bottom>
+          <HomeCapitalPhoto />
+        </Fade>
       </div>
       <div className={cx("about-us-container")}>
-        <HomeAboutUs />
+        <Fade bottom>
+          <HomeAboutUs />
+        </Fade>
       </div>
       <div className={cx("business-model-container")}>
-        <HomeBusinessModel />
+        <Fade bottom>
+          <HomeBusinessModel />
+        </Fade>
       </div>
       <div className={cx("platform-container")}>
-        <HomePlatform />
+        <Fade bottom>
+          <HomePlatform />
+        </Fade>
       </div>
       <div className={cx("platform-image-container")}>
         <HomePlatformImage />
       </div>
       <div className={cx("allocation-container")}>
-        <HomeAllocation />
+        <Fade bottom>
+          <HomeAllocation />
+        </Fade>
       </div>
       <div className={cx("use-of-fund-container")}>
-        <HomeUseOfFund />
+        <Fade bottom>
+          <HomeUseOfFund />
+        </Fade>
       </div>
       <div className={cx("mobile-app-down-container")}>
-        <HomeDownloadMobileApp />
+        <Fade bottom>
+          <HomeDownloadMobileApp />
+        </Fade>
       </div>
       <div className={cx("futured-container")}>
-        <HomeFutured />
+        <Fade bottom>
+          <HomeFutured />
+        </Fade>
       </div>
       <div className={cx("what-bct-does-container")}>
-        <HomeWhatBctDoes />
+        <Fade bottom>
+          <HomeWhatBctDoes />
+        </Fade>
       </div>
       <div className={cx("bct-main-net-container")}>
-        <HomeBctMainNet />
+        <Fade bottom>
+          <HomeBctMainNet />
+        </Fade>
       </div>
       <div className={cx("proof-of-hybrid-container")}>
-        <HomeProofOfHistory />
+        <Fade bottom>
+          <HomeProofOfHistory />
+        </Fade>
       </div>
       <div className={cx("roadmap-container")}>
-        <HomeRoadMap />
+        <Fade bottom>
+          <HomeRoadMap />
+        </Fade>
       </div>
       <div className={cx("business-team-container")}>
-        <HomeBusinessTeam />
+        <Fade bottom>
+          <HomeBusinessTeam />
+        </Fade>
       </div>
       <div className={cx("our-client-container")}>
-        <HomeOurClient />
+        <Fade bottom>
+          <HomeOurClient />
+        </Fade>
       </div>
     </div>
   );
