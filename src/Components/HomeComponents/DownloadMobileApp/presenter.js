@@ -27,11 +27,17 @@ const DownloadMobileApp = () => {
             IOS App store Contents
             <br />• &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For Customer based Service.
           </p>
-          <img
-            className={cx("download-button")}
-            alt={"downbutton"}
-            src={require("../../../Media/Images/Home/DownLoadMobile/downbutton.png")}
-          />
+          <a
+            href={
+              "https://play.google.com/store/apps/details?id=com.blockcelltoken.bct"
+            }
+          >
+            <img
+              className={cx("download-button")}
+              alt={"downbutton"}
+              src={require("../../../Media/Images/Home/DownLoadMobile/downbutton.png")}
+            />
+          </a>
         </div>
         <div className={cx("column")}>
           <img
