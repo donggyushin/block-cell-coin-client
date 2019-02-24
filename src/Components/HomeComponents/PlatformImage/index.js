@@ -1,2 +1,2 @@
-import HomePlatformImage from "./presenter";
+import HomePlatformImage from "./container";
 export default HomePlatformImage;
