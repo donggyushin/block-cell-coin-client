@@ -40,6 +40,9 @@ const NavVarPresenter = ({
               WHITE PAPER <i class="fas fa-chevron-down" />
             </span>
           </div>
+          <div className={cx("icon")}>
+            <i class="fas fa-list" />
+          </div>
         </div>
       </div>
     </div>
