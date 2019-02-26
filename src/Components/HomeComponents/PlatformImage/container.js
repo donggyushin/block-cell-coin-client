@@ -7,7 +7,7 @@ class Container extends React.Component {
     hours: "",
     minutes: "",
     seconds: "",
-    progress: 0,
+    progress: 50,
     progressActive: false
   };
 
@@ -45,6 +45,7 @@ class Container extends React.Component {
       if (currentScrollHeight >= 3115) {
         this.setState({
           ...this.state,
+          progress: 0,
           progressActive: true
         });
         this.intervalId2 = setInterval(() => {
