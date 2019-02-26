@@ -1,14 +1,23 @@
+@import "../../../Styles/index.scss";
+
 .container {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 100px;
+
+  @media screen and (max-width: $break-small) {
+    width: 100vw;
+  }
   .box {
     width: 960px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (max-width: $break-small) {
+      width: 90vw;
+    }
     .title {
       font-size: 25px;
     }

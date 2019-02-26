@@ -1,3 +1,5 @@
+@import "../../../Styles/index.scss";
+
 .container {
   width: 100%;
   background-color: #1f0239;
@@ -8,13 +10,27 @@
   padding-top: 140px;
   padding-bottom: 100px;
 
+  @media screen and (max-width: $break-small) {
+    width: 100vw;
+  }
+
   .row {
     width: 1250px;
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width: $break-small) {
+      width: 80vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .iten {
       width: 400px;
+      @media screen and (max-width: $break-small) {
+        width: 100%;
+      }
     }
 
     .title {

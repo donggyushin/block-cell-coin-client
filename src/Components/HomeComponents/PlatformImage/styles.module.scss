@@ -1,3 +1,5 @@
+@import "../../../Styles//index.scss";
+
 .container {
   width: 100%;
   background-color: #0d1136;
@@ -7,12 +9,19 @@
   color: white;
   padding-top: 70px;
   padding-bottom: 180px;
+  @media screen and (max-width: $break-small) {
+    width: 100vw;
+  }
   .box {
     width: 960px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+
+    @media screen and (max-width: $break-small) {
+      display: none;
+    }
 
     .title {
       font-size: 28px;
@@ -42,12 +51,13 @@
         width: 50px;
         font-size: 25px;
         text-align: center;
+
         &:first-child {
           margin-right: 10px;
         }
 
         &:nth-child(2) {
-          margin-right: 52px;
+          margin-right: 59px;
         }
 
         &:nth-child(3) {
@@ -61,6 +71,128 @@
       position: absolute;
       bottom: 142px;
       left: 313px;
+    }
+  }
+
+  .mobile-box {
+    display: none;
+
+    .title {
+      font-size: 30px;
+    }
+    .underline {
+      width: 120px;
+      height: 2px;
+      background-color: white;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: $break-small) {
+      display: flex;
+      width: 100vw;
+
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .image-container {
+      width: 80vw;
+
+      display: flex;
+      justify-content: center;
+
+      @media screen and (max-width: $break-mobile) {
+        flex-direction: column;
+        align-items: center;
+        img {
+          &:first-child {
+            width: 263px;
+          }
+          &:last-child {
+            width: 263px;
+          }
+        }
+      }
+    }
+
+    .d-day-count-and-graph {
+      margin-top: 50px;
+      width: 80vw;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+
+      .mobile-d-day {
+        display: flex;
+        font-size: 30px;
+        font-weight: 900;
+
+        margin-bottom: 30px;
+
+        div {
+          margin-right: 15px;
+          margin-left: 15px;
+        }
+
+        .hours {
+          margin-right: 60px;
+        }
+      }
+
+      .mobile-d-day-text {
+        font-size: 12px;
+
+        width: 294px;
+        margin-bottom: 30px;
+
+        .days {
+          margin-left: 10px;
+          margin-right: 23px;
+        }
+        .hours {
+          margin-right: 50px;
+        }
+        .minutes {
+          margin-right: 23px;
+        }
+      }
+
+      .text-on-graph {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .graph-container {
+        width: 100%;
+      }
+
+      .text-under-graph {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .two-five {
+          margin-left: 15%;
+        }
+      }
+
+      .button-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        button {
+          color: white;
+          padding: 10px;
+          font-size: 25px;
+          font-weight: 900;
+          border-radius: 15px;
+          border: 0;
+          background-image: linear-gradient(to right, #3183c4, #57bdc2);
+        }
+      }
     }
   }
 }
