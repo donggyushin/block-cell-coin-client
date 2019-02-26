@@ -91,9 +91,9 @@ const HomePage = () => {
         </Fade>
       </div>
       <div className={cx("business-team-container")}>
-        <Fade bottom>
-          <HomeBusinessTeam />
-        </Fade>
+        {/* <Fade bottom> */}
+        <HomeBusinessTeam />
+        {/* </Fade> */}
       </div>
       <div className={cx("our-client-container")}>
         <Fade bottom>
