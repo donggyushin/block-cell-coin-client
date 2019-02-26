@@ -36,9 +36,11 @@ const NavVarPresenter = ({
             <span onClick={scrollToFutured}>FUTURED</span>
             <span onClick={scrollToRoadMap}>ROAD MAP</span>
             <span onClick={scrollToOurTeam}>OUR TEAM</span>
-            <span>
-              WHITE PAPER <i class="fas fa-chevron-down" />
-            </span>
+            <a href={"/static/Images/preparing.png"}>
+              <span>
+                WHITE PAPER <i class="fas fa-chevron-down" />
+              </span>
+            </a>
           </div>
           <div className={cx("icon")}>
             <i class="fas fa-list" />
