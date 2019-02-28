@@ -3,10 +3,10 @@ import Presenter from "./presenter";
 
 class Container extends React.Component {
   state = {
-    days: "",
-    hours: "",
-    minutes: "",
-    seconds: "",
+    days: "0",
+    hours: "0",
+    minutes: "0",
+    seconds: "0",
     progress: 50,
     progressActive: false
   };

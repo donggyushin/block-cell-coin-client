@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import classNames from "classnames/bind";
+import URL from "../../../URL";
+import DEV from "../../../Dev";
+import Fade from "react-reveal/Fade";
 
 const cx = classNames.bind(styles);
 
@@ -12,7 +15,9 @@ const NavVarPresenter = ({
   scrollToAllocation,
   scrollToFutured,
   scrollToRoadMap,
-  scrollToOurTeam
+  scrollToOurTeam,
+  dropdown,
+  clickhitePaper
 }) => {
   return (
     <div className={cx("outer")}>
@@ -36,11 +41,42 @@ const NavVarPresenter = ({
             <span onClick={scrollToFutured}>FUTURED</span>
             <span onClick={scrollToRoadMap}>ROAD MAP</span>
             <span onClick={scrollToOurTeam}>OUR TEAM</span>
-            <a href={"/static/Images/preparing.png"}>
-              <span>
+            <div className={cx("dropdown-menu-item-container")}>
+              <span onClick={clickhitePaper}>
                 WHITE PAPER <i class="fas fa-chevron-down" />
               </span>
-            </a>
+
+              <Fade top>
+                <div
+                  className={
+                    dropdown ? cx("dropdown-menu-items") : cx("dropdown-false")
+                  }
+                  ref="area"
+                >
+                  <a
+                    href={
+                      DEV
+                        ? `${URL.serverUrlDev}static/Images/preparing.png`
+                        : `${URL.serverUrlPrd}static/Images/preparing.png`
+                    }
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <button>VIEW</button>
+                  </a>
+                  <div className={cx("line")} />
+                  <a
+                    href={
+                      DEV
+                        ? `${URL.serverUrlDev}api/files/download/preparing.png`
+                        : `${URL.serverUrlPrd}api/files/download/preparing.png`
+                    }
+                  >
+                    <button>DOWNLOAD</button>
+                  </a>
+                </div>
+              </Fade>
+            </div>
           </div>
           <div className={cx("icon")}>
             <i class="fas fa-list" />
