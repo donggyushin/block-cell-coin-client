@@ -10,7 +10,7 @@ const Allocation = () => {
       <div className={cx("box")}>
         <span className={cx("title")}>ALLOCATIONS</span>
         <div className={cx("under-line")} />
-        <img
+        {/* <img
           alt={"allocation"}
           className={cx("first-img")}
           src={require("../../../Media/Images/Home/Allocation/allocation1.png")}
@@ -23,6 +23,10 @@ const Allocation = () => {
         <img
           alt={"allocation"}
           src={require("../../../Media/Images/Home/Allocation/allocation3.png")}
+        /> */}
+        <img
+          alt={"chart"}
+          src={require("../../../Media/Images/Home/Allocation/chart.png")}
         />
       </div>
     </div>
